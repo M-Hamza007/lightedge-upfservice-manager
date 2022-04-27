@@ -19,7 +19,7 @@ RUN mkdir -p /var/www/lightedge/
 RUN ln -sf /lightedge-upfservice-manager-master/webui/ /var/www/lightedge/upfservice
 
 # Run the controller
-#ENTRYPOINT ["python3.7", "/lightedge-upfservice-manager-master/lightedge-upfservice-manager.py"]
+# ENTRYPOINT ["python3.7", "/lightedge-upfservice-manager-master/lightedge-upfservice-manager.py"]
 ENTRYPOINT ["./lightedge-upfservice-manager-master/lightedge-upfservice-manager.py"]
 
 # Expose Web GUI
